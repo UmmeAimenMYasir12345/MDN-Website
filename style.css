@@ -191,8 +191,10 @@ ul  li{
 
 
 .searchicon{
-    margin-top: 7px;
+    margin-top: 6px;
     color: rgb(193, 190, 190);
+    overflow: hidden;
+
     
 }
 
@@ -298,15 +300,7 @@ button{
     margin-top: 200px;
     /* height: 430px; */
     font-family: sans-serif;
-    /* overflow-y: scroll; */
-    /* position: fixed; */
-    /* overflow-y: scroll; */
-    /* scroll-margin-top: 70%; */
-    /* scrollbar-width: none; */
-    /* right: 0;
-    top: 30%; */
-    /* scrollbar-color: gray; */
-
+    
 }
 
 /* .box3::-webkit-scrollbar{
@@ -415,13 +409,12 @@ h5{
 
 .list ul li a{
     display: inline-block;
-    /* padding: 20px 25px; */
-    /* padding-top: 20px; */
-    
     color: black;
+    /* overflow: hidden; */
     text-decoration: none;
     /* text-align: center; */
     font-size: 14px;
+    
     
     
 
@@ -432,9 +425,7 @@ h5{
     display: block;
     height: 55px;
     
-    
 }
-
 .list ul li ul.dropdown{
     width: 100%;
     /* background: #22438C; */
@@ -459,23 +450,6 @@ h5{
 .list ul li{
     height: 200px;
     scrollbar-width: none;
-}
-
-select{
-    border: 0;
-    outline: 0;
-    appearance: none;
-    width: 200px;
-    height: 40px;
-}
-
-option{
-    border: 0;
-    outline: 0;
-    
-    
-    
-    
 }
 
 
@@ -754,13 +728,16 @@ option{
     text-decoration: none;
 }
 
+@media only screen and (max-width:1880px){
 
-{
     .web{
-        margin-top: 300px;
+        margin-top: 30%;
     }
 
+
 }
+
+
 
 @media only screen and (max-width:1215px){
     .box3{
@@ -794,19 +771,21 @@ option{
 
 @media only screen and (max-width:1000px){
     .box1{
-        visibility: hidden;
+        display: none;
+        top: 0;
+        width: 0px;
     }
 
     .box2{
         text-align: center;
         /* padding-right: 20%; */
         /* margin-right: 30%; */
-        width: 300%;
+        /* width: 300%; */
+        padding-left: 0;
+
     }
 
-    .web{
-        margin-top: 300px;
-    }
+    
 }
 
 @media only screen and (max-width:715px){
